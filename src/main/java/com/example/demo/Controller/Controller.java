@@ -14,7 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @author admin
  */
 
-@RestController
+@org.springframework.stereotype.Controller
+
 public class Controller {
     
     @RequestMapping(value = {"/User"})
@@ -29,5 +30,30 @@ public class Controller {
     public String show()
     {
         return "index";
+    }
+    @RequestMapping(value = "/home.html")
+    public String home()
+    {
+        return "home";
+    }
+    @RequestMapping(value = "/thucdon.html")
+    public String thucdon()
+    {
+        return "thucdon";
+    }
+    @RequestMapping(value = "/lienhe.html")
+    public String lienhe()
+    {
+        return "lienhe";
+    }
+    @RequestMapping(value = "/dangki.html")
+    public String dangki()
+    {
+        return "dangki";
+    }
+    @RequestMapping(value = "/dangnhap.html")
+    public String dangnhap()
+    {
+        return "dangnhap";
     }
 }

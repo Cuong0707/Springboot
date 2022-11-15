@@ -1,0 +1,277 @@
+body {
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+body {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background-color: #454545;
+    color: rgba(0, 0, 0, 0.55);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    line-height: 1;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+user agent stylesheet body {
+    display: block;
+    margin: 8px;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+element.style {
+    position: relative;
+    width: 543px;
+    height: 51px;
+    display: block;
+    vertical-align: baseline;
+    float: none;
+}
+section#wrapper-content {
+    padding-top: 0px !important;
+}
+
+.wrapper-content {
+    position: relative;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+.page-id-425 .title-container,
+.page-id-688 .title-container {
+    margin-bottom: 0;
+}
+
+.title-container {
+    background-image: url(https://nhahangdoanvien.com.vn/wp-content/uploads/2015/12/anh-breadcumb-thuc-don.jpg);
+}
+
+/* @media (max-width: 767px) .title-container {
+    min-height: 300px;
+    padding-top: 0 !important;
+} */
+
+.title-container {
+    background-color: transparent;
+    background: url(images/anh-nen-chuyen-muc.jpg) no-repeat repeat scroll 0 0;
+    position: relative;
+    background-size: cover;
+    -webkit-background-size: cover;
+    min-height: 460px;
+    margin-bottom: 60px;
+    padding-top: 182px !important;
+}
+
+.title-container {
+    background-color: #f3f3f3;
+}
+
+div {
+    display: block;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+user agent stylesheet div {
+    display: block;
+}

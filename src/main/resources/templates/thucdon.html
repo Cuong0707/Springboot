@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="alternate" hreflang="vi" href="https://nhahangdoanvien.com.vn/thuc-don/" />
+<link rel="alternate" hreflang="en-us" href="https://nhahangdoanvien.com.vn/en/menu/" />
+<style>
+    #wp-admin-bar-layers-edit-layout .ab-icon:before {
+        font-family: "layers-interface" !important;
+        content: "\e62f" !important;
+        font-size: 16px !important;
+    }
+</style>
+<link rel='stylesheet' id='dashicons-css'
+    href='https://nhahangdoanvien.com.vn/wp-includes/css/dashicons.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='elusive-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/plugins/layers-plus/icons/css/elusive.min.css?ver=2.0'
+    type='text/css' media='all' />
+<link rel='stylesheet' id='fa-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/plugins/layers-plus/icons/css/font-awesome.min.css?ver=4.2.0'
+    type='text/css' media='all' />
+<link rel='stylesheet' id='foundation-icons-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/plugins/layers-plus/icons/css/foundation-icons.min.css?ver=3.0'
+    type='text/css' media='all' />
+<link rel='stylesheet' id='genericon-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/plugins/layers-plus/icons/css/genericons.min.css?ver=3.2'
+    type='text/css' media='all' />
+<link rel='stylesheet' id='menu-icons-extra-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/plugins/layers-plus/icons/css/extra.min.css?ver=0.7.0'
+    type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'
+    href='https://nhahangdoanvien.com.vn/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css'
+    media='all' />
+<link rel='stylesheet' id='dashboard-front-end-style-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/plugins/chili-dashboard_/css/dashboard-front-end-style.css?ver=5.3.2'
+    type='text/css' media='all' />
+<link rel='stylesheet' id='main-style-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/plugins/chilicomp-library/libs/css/related-news.css?ver=5.3.2'
+    type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.8'
+    type='text/css' media='all' />
+<link rel='stylesheet' id='taxonomy-image-plugin-public-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/plugins/taxonomy-images/css/style.css?ver=0.9.6' type='text/css'
+    media='screen' />
+<link rel='stylesheet' id='wordpress-popular-posts-css-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/plugins/wordpress-popular-posts/public/css/wpp.css?ver=4.2.2'
+    type='text/css' media='all' />
+<link rel='stylesheet' id='wpml-legacy-dropdown-click-0-css'
+    href='//nhahangdoanvien.com.vn/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click/style.css?ver=1'
+    type='text/css' media='all' />
+<style id='wpml-legacy-dropdown-click-0-inline-css' type='text/css'>
+    .wpml-ls-statics-shortcode_actions {
+        background-color: #ffffff;
+    }
+
+    .wpml-ls-statics-shortcode_actions,
+    .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu,
+    .wpml-ls-statics-shortcode_actions a {
+        border-color: #cdcdcd;
+    }
+
+    .wpml-ls-statics-shortcode_actions a {
+        color: #444444;
+        background-color: #ffffff;
+    }
+
+    .wpml-ls-statics-shortcode_actions a:hover,
+    .wpml-ls-statics-shortcode_actions a:focus {
+        color: #000000;
+        background-color: #eeeeee;
+    }
+
+    .wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a {
+        color: #444444;
+        background-color: #ffffff;
+    }
+
+    .wpml-ls-statics-shortcode_actions .wpml-ls-current-language:hover>a,
+    .wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a:focus {
+        color: #000000;
+        background-color: #eeeeee;
+    }
+</style>
+<link rel='stylesheet' id='layers-google-fonts-css'
+    href='//fonts.googleapis.com/css?family=Open+Sans%3Aregular%2Citalic%2C700%2C300%2C300italic%2C600%2C600italic%2C700italic%2C800%2C800italic&#038;ver=1.2.9'
+    type='text/css' media='all' />
+<link rel='stylesheet' id='layers-framework-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/themes/layerswp/assets/css/framework.css?ver=1.2.9' type='text/css'
+    media='all' />
+<link rel='stylesheet' id='layers-components-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/themes/layerswp/assets/css/components.css?ver=1.2.9' type='text/css'
+    media='all' />
+<link rel='stylesheet' id='layers-responsive-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/themes/layerswp/assets/css/responsive.css?ver=1.2.9' type='text/css'
+    media='all' />
+<link rel='stylesheet' id='layers-icon-fonts-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/themes/layerswp/assets/css/layers-icons.css?ver=1.2.9'
+    type='text/css' media='all' />
+<link rel='stylesheet' id='layers-style-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/themes/layerswp-child/style.css?ver=1.2.9' type='text/css'
+    media='all' />
+<link rel='stylesheet' id='font-awesome-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/plugins/layers-carousel-mojo/assets/css/font-awesome.min.css?ver=4.4.0'
+    type='text/css' media='all' />
+<link rel='stylesheet' id='layers-carousel-mojo-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/plugins/layers-carousel-mojo/assets/css/core.min.css?ver=1.0.0'
+    type='text/css' media='all' />
+<link rel='stylesheet' id='layers-plus-animations-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/plugins/layers-plus/assets/css/animations.css?ver=5.3.2'
+    type='text/css' media='all' />
+<link rel='stylesheet' id='layers-plus-elements-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/plugins/layers-plus/assets/css/elements.css?ver=5.3.2'
+    type='text/css' media='all' />
+<link rel='stylesheet' id='lploader-css'
+    href='https://nhahangdoanvien.com.vn/wp-content/plugins/layers-plus/assets/css/style.css?ver=1.0' type='text/css'
+    media='all' />
+<!--n2css-->
+<script type='text/javascript'
+    src='https://nhahangdoanvien.com.vn/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript'
+    src='https://nhahangdoanvien.com.vn/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var wpp_params = { "sampling_active": "0", "sampling_rate": "100", "ajax_url": "https:\/\/nhahangdoanvien.com.vn\/wp-json\/wordpress-popular-posts\/v1\/popular-posts\/", "ID": "425", "token": "8b25071641", "debug": "" };
+/* ]]> */
+</script>
+<script type='text/javascript'
+    src='https://nhahangdoanvien.com.vn/wp-content/plugins/wordpress-popular-posts/public/js/wpp-4.2.0.min.js?ver=4.2.2'></script>
+<script type='text/javascript'
+    src='//nhahangdoanvien.com.vn/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click/script.js?ver=1'></script>
+<script type='text/javascript'
+    src='https://nhahangdoanvien.com.vn/wp-content/themes/layerswp-child/js/customer.js?ver=5.3.2'></script>
+<script type='text/javascript'
+    src='https://nhahangdoanvien.com.vn/wp-content/themes/layerswp/assets/js/plugins.js?ver=1.2.9'></script>
+<link rel="canonical" href="https://nhahangdoanvien.com.vn/thuc-don/" />
+<meta name="generator" content="WPML ver:4.3.2 stt:1,59;" />
+<style type="text/css" id="layers-inline-styles-header">
+    body {
+        font-family: "Open Sans", Helvetica, sans-serif;
+    }
+</style>
+ <!-- <style>
+    #lploader-load-posts a {
+        background: !important;
+        border: 1px solid !important;
+        color: !important;
+    }
+
+        {
+        display none;
+    }
+</style>  Site Logo: hide header text   -->
+<style type="text/css">
+    .sitetitle,
+    .tagline {
+        position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+</style>
+<link rel="icon" href="https://nhahangdoanvien.com.vn/wp-content/uploads/2022/05/cropped-web-NHDV-icon-32x32.png"
+    sizes="32x32" />
+<link rel="icon" href="https://nhahangdoanvien.com.vn/wp-content/uploads/2022/05/cropped-web-NHDV-icon-192x192.png"
+    sizes="192x192" />
+<link rel="apple-touch-icon-precomposed"
+    href="https://nhahangdoanvien.com.vn/wp-content/uploads/2022/05/cropped-web-NHDV-icon-180x180.png" />
+<meta name="msapplication-TileImage"
+    content="https://nhahangdoanvien.com.vn/wp-content/uploads/2022/05/cropped-web-NHDV-icon-270x270.png" />
+<style type="text/css" id="wp-custom-css">
+    .title-container .title .bread-crumbs {
+        display: none;
+    }
+
+    span.meta-item.meta-author {
+        display: none !important;
+    }
+
+    p.btn-submit {
+        margin-left: -20px;
+    }
+
+    section#wrapper-content {
+        padding-top: 0px !important;
+    }
+
+    .header-site.header-sticky {
+        background-color: rgb(243 243 243 / 0%) !important;
+    }
+</style>
+</head>
+
+<body>
+            <section
+                class="lcam-contents-widget-section widget row content-vertical-massive lcam-widget lcam-contents-widget content-three-n mb60 "
+                id="layers-widget-lcam_contents-61">
+
+                <!-- set overlay section -->
+
+                <div class="container clearfix">
+                    <div class="section-title clearfix large text-center ">
+                        <h3 class="heading">Danh sách</h3>
+                        <div class="excerpt">
+                            <p>Thực đơn</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lcam-contents-widget-container lcam-widget-container container">
+                    <div class="lcam-carousel-container" data-mode="horizontal" data-speed="500" data-maxslides="1"
+                        data-moveslides="1" data-slidemargin="0" data-randomstart=false data-adaptiveheight=false
+                        data-adaptiveHeightspeed="0" data-touchenabled=true data-auto=false data-pause="4000"
+                        data-autohover=false data-autodelay="0" data-ticker=false data-tickerhover=true>
+                        <ul class="lcam-carousel">
+                            <li>
+                                <div id="layers-widget-lcam_contents-61-232" class="lcam-consingle-default has-image">
+
+
+                                    <div class="media no-push-bottom image-top medium">
+
+                                        <!-- Featured image -->
+                                        <div class="media-image ">
+                                            <img width="720" height="280"
+                                                th:src="@{/image/CangCuaBachHoa.jpg}"
+                                                class="attachment-medium size-medium" alt=""
+                                                th:srcset="@{image/CangCuaBachHoa.jpg 720w, image/CangCuaBachHoa.jpg 666w}"
+                                                sizes="(max-width: 720px) 100vw, 720px" />
+                                        </div>
+
+                                        <!-- Media body -->
+
+                                        <div class="media-body text-center">
+                                            <h5 class="heading">
+                                                Thực Đơn Khai Vị </h5>
+                                            <div class="excerpt">
+                                                <div class="total-menu-single">
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Thịt Nguội Bát Bửu</h4>
+                                                        </div>
+                                                        <div class="smi-des">Món ăn khai vị được kết hợp với 6 loại thịt nguội khác nhau</div>
+                                                        <div class="smi-price">120K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Càng Cua Bách Hoa</h4>
+                                                        </div>
+                                                        <div class="smi-des">Càng cua được bao bọc bởi 1 lớp thịt đầy đặn kích thích vị giác</div>
+                                                        <div class="smi-price">100K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Đậu Hũ Non Sốt Trứng Muối</h4>
+                                                        </div>
+                                                        <div class="smi-des">Món ăn thanh đạm rất bổ dưỡng, dùng làm món
+                                                            khai vị trong bữa tiệc</div>
+                                                        <div class="smi-price">80K</div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- .media -->
+
+                                </div><!-- .lcam-consingle -->
+                            </li>
+                            <li>
+                                <div id="layers-widget-lcam_contents-61-155" class="lcam-consingle-default has-image">
+                            
+                            
+                                    <div class="media no-push-bottom image-top medium">
+                            
+                                        <!-- Featured image -->
+                                        <div class="media-image ">
+                                            <img width="720" height="280" th:src="@{templates/image/ThitHeoNuongCR.jpg}" class="attachment-medium size-medium" alt=""
+                                                srcset="image/ThitHeoNuongCR.jpg 720w, image/ThitHeoNuongCR.jpg 666w" sizes="(max-width: 720px) 100vw, 720px" />
+                                        </div>
+                            
+                                        <!-- Media body -->
+                            
+                                        <div class="media-body text-center">
+                                            <h5 class="heading">
+                                                Thực Đơn Thịt Heo </h5>
+                                            <div class="excerpt">
+                                                <div class="total-menu-single">
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Thịt Heo Nướng Củ Riềng</h4>
+                                                        </div>
+                                                        <div class="smi-des">Cách chế biến mới lạ, mùi vị hấp dẫn mang
+                                                            màu sắc bắt mắt<br> </div>
+                                                        <div class="smi-price">100K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Thịt Heo Nướng Ngũ Vị</h4>
+                                                        </div>
+                                                        <div class="smi-des">Một món ăn đãi tiệc, hơi cay nhẹ,
+                                                            kích thích vị giác</div>
+                                                        <div class="smi-price">150K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Thịt Heo Xào Măng</h4>
+                                                        </div>
+                                                        <div class="smi-des">Một món ăn vô cùng thơm ngon và hấp dẫn
+                                                        </div>
+                                                        <div class="smi-price">120K</div>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                    </div><!-- .media -->
+                            
+                                </div><!-- .lcam-consingle -->
+                            </li>
+                            <li>
+                                <div id="layers-widget-lcam_contents-61-155" class="lcam-consingle-default has-image">
+
+
+                                    <div class="media no-push-bottom image-top medium">
+
+                                        <!-- Featured image -->
+                                        <div class="media-image ">
+                                            <img width="720" height="280"
+                                                src="image/LauThai.jpg"
+                                                class="attachment-medium size-medium" alt=""
+                                                srcset="image/LauThai.jpg 720w, image/LauThai.jpg 666w"
+                                                sizes="(max-width: 720px) 100vw, 720px" />
+                                        </div>
+
+                                        <!-- Media body -->
+
+                                        <div class="media-body text-center">
+                                            <h5 class="heading">
+                                                Thực Đơn Món Lẩu </h5>
+                                            <div class="excerpt">
+                                                <div class="total-menu-single">
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Lẩu Gà Lá Giang</h4>
+                                                        </div>
+                                                        <div class="smi-des">Cách chế biến mới lạ, mùi vị hấp dẫn mang
+                                                            màu sắc bắt mắt<br> </div>
+                                                        <div class="smi-price">180K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Lẩu Thái</h4>
+                                                        </div>
+                                                        <div class="smi-des">Một món ăn đãi tiệc, hơi cay nhẹ,
+                                                            kích thích vị giác</div>
+                                                        <div class="smi-price">200K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Lẩu Cá Basa</h4>
+                                                        </div>
+                                                        <div class="smi-des">Một món ăn vô cùng thơm ngon và hấp dẫn
+                                                        </div>
+                                                        <div class="smi-price">250K</div>
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- .media -->
+
+                                </div><!-- .lcam-consingle -->
+                            </li>
+                        </ul>
+                        <div class="lcam-carousel-controller-bottom-center">
+                            <button id="#layers-widget-lcam_contents-61-prev" class="lcam-carousel-to-prev"><i
+                                    class="fa fa-caret-left"></i></button>
+                            <button id="#layers-widget-lcam_contents-61-next" class="lcam-carousel-to-next"><i
+                                    class="fa fa-caret-right"></i></button>
+                        </div>
+                    </div><!-- .lcam-carousel-container -->
+                </div><!-- .row -->
+            </section><!-- .lcam-widget-section -->
+            <section
+                class="lcam-contents-widget-section widget row content-vertical-massive lcam-widget lcam-contents-widget content-four-left-n "
+                id="layers-widget-lcam_contents-62">
+
+                <!-- set overlay section -->
+
+
+                <div class="lcam-contents-widget-container lcam-widget-container ">
+                    <div class="lcam-carousel-container" data-mode="horizontal" data-speed="500" data-maxslides="1"
+                        data-moveslides="1" data-slidemargin="10" data-randomstart=false data-adaptiveheight=false
+                        data-adaptiveHeightspeed="0" data-touchenabled=true data-auto=false data-pause="4000"
+                        data-autohover=false data-autodelay="0" data-ticker=false data-tickerhover=true>
+                        <ul class="lcam-carousel">
+                            <li>
+                                <div id="layers-widget-lcam_contents-62-431" class="lcam-consingle-default has-image">
+
+
+                                    <div class="media no-push-bottom image-top medium">
+
+                                        <!-- Featured image -->
+                                        <div class="media-image ">
+                                            <img width="340" height="220"
+                                                src="image/Sting.jpg"
+                                                class="attachment-medium size-medium" alt="" />
+                                        </div>
+
+                                        <!-- Media body -->
+
+                                        <div class="media-body text-left">
+                                            <h5 class="heading">
+                                                Nước Uống </h5>
+                                            <div class="excerpt">
+                                                <div class="total-menu-single">
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Sting</h4>
+                                                        </div>
+                                                        <div class="smi-price">15K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Cocacola</h4>
+                                                        </div>
+                                                        <div class="smi-price">15K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>PepSi</h4>
+                                                        </div>
+                                                        <div class="smi-price">15K</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- .media -->
+
+                                </div><!-- .lcam-consingle -->
+                            </li>
+                            <li>
+                                <div id="layers-widget-lcam_contents-62-530" class="lcam-consingle-default has-image">
+
+
+                                    <div class="media no-push-bottom image-top medium">
+
+                                        <!-- Featured image -->
+                                        <div class="media-image ">
+                                            <img width="340" height="220"
+                                                src="image/NuocEpCam.jpg"
+                                                class="attachment-medium size-medium" alt="" />
+                                        </div>
+
+                                        <!-- Media body -->
+
+                                        <div class="media-body text-left">
+                                            <h5 class="heading">
+                                                Nước Ép </h5>
+                                            <div class="excerpt">
+                                                <div class="total-menu-single">
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Nước Ép Ổi</h4>
+                                                        </div>
+                                                        <div class="smi-price">20K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Nước Ép Cam</h4>
+                                                        </div>
+                                                        <div class="smi-price">20K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Nước Ép Táo</h4>
+                                                        </div>
+                                                        <div class="smi-price">20K</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- .media -->
+
+                                </div><!-- .lcam-consingle -->
+                            </li>
+                            <li>
+                                <div id="layers-widget-lcam_contents-62-346" class="lcam-consingle-default has-image">
+
+
+                                    <div class="media no-push-bottom image-top medium">
+
+                                        <!-- Featured image -->
+                                        <div class="media-image ">
+                                            <img width="340" height="220"
+                                                src="image//SinhToBo.jpg"
+                                                class="attachment-medium size-medium" alt="" />
+                                        </div>
+
+                                        <!-- Media body -->
+
+                                        <div class="media-body text-left">
+                                            <h5 class="heading">
+                                                Sinh Tố </h5>
+                                            <div class="excerpt">
+                                                <div class="total-menu-single">
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Sinh Tố Bơ</h4>
+                                                        </div>
+                                                        <div class="smi-price">20K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Sinh Tố Sầu Riêng</h4>
+                                                        </div>
+                                                        <div class="smi-price">20K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Sinh Tố Cà Rốt</h4>
+                                                        </div>
+                                                        <div class="smi-price">20K</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- .media -->
+
+                                </div><!-- .lcam-consingle -->
+                            </li>
+                        </ul>
+                        <div class="lcam-carousel-controller-bottom-center">
+                            <button id="#layers-widget-lcam_contents-62-prev" class="lcam-carousel-to-prev"><i
+                                    class="fa fa-caret-left"></i></button>
+                            <button id="#layers-widget-lcam_contents-62-next" class="lcam-carousel-to-next"><i
+                                    class="fa fa-caret-right"></i></button>
+                        </div>
+                    </div><!-- .lcam-carousel-container -->
+                </div><!-- .row -->
+            </section><!-- .lcam-widget-section -->
+            <section
+                class="lcam-contents-widget-section widget row content-vertical-massive lcam-widget lcam-contents-widget content-four-right-n "
+                id="layers-widget-lcam_contents-63">
+
+                <!-- set overlay section -->
+
+
+                <div class="lcam-contents-widget-container lcam-widget-container ">
+                    <div class="lcam-carousel-container" data-mode="horizontal" data-speed="500" data-maxslides="1"
+                        data-moveslides="1" data-slidemargin="10" data-randomstart=false data-adaptiveheight=false
+                        data-adaptiveHeightspeed="0" data-touchenabled=true data-auto=false data-pause="4000"
+                        data-autohover=false data-autodelay="0" data-ticker=false data-tickerhover=true>
+                        <ul class="lcam-carousel">
+                            <li>
+                                <div id="layers-widget-lcam_contents-63-431" class="lcam-consingle-default has-image">
+
+
+                                    <div class="media no-push-bottom image-top medium">
+
+                                        <!-- Featured image -->
+                                        <div class="media-image ">
+                                            <img width="600" height="270"
+                                                src="https://nhahangdoanvien.com.vn/wp-content/uploads/2022/05/diem-tam-sang-1.jpg"
+                                                class="attachment-medium size-medium" alt="" />
+                                        </div>
+
+                                        <!-- Media body -->
+
+                                        <div class="media-body text-left">
+                                            <h5 class="heading">
+                                                Thực Đơn Món Súp </h5>
+                                            <div class="excerpt">
+                                                <div class="total-menu-single">
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Súp Cua</h4>
+                                                        </div>
+                                                        <div class="smi-des">Luôn hấp dẫn mọi thực khách, được nhiều
+                                                            nước trên thế giới đón nhận</div>
+                                                        <div class="smi-price">120K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Súp Thịt Gà</h4>
+                                                        </div>
+                                                        <div class="smi-des">Là món ăn bổ dưỡng, nước dùng sệt sệt thơm ngọt,
+                                                            thịt gà mềm, tươi</div>
+                                                        <div class="smi-price">100K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Súp Bí Đỏ</h4>
+                                                        </div>
+                                                        <div class="smi-des">Là món ăn bổ dưỡng, bí đỏ mềm, ngọt, tươi</div>
+                                                        <div class="smi-price">65K</div>
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- .media -->
+
+                                </div><!-- .lcam-consingle -->
+                            </li>
+                            <li>
+                                <div id="layers-widget-lcam_contents-63-172" class="lcam-consingle-default has-image">
+
+
+                                    <div class="media no-push-bottom image-top medium">
+
+                                        <!-- Featured image -->
+                                        <div class="media-image ">
+                                            <img width="600" height="270"
+                                                src="image/GoiCuHuDua.jpg"
+                                                class="attachment-medium size-medium" alt="" />
+                                        </div>
+
+                                        <!-- Media body -->
+
+                                        <div class="media-body text-left">
+                                            <h5 class="heading">
+                                                Thực Đơn Món Gỏi </h5>
+                                            <div class="excerpt">
+                                                <div class="total-menu-single">
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Gỏi Củ Hũ Dừa</h4>
+                                                        </div>
+                                                        <div class="smi-des">Đặc sản nổi danh của Miền Tây, món
+                                                            ăn hấp dẫn với nhiều topping đi kèm</div>
+                                                        <div class="smi-price">80K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Gỏi Ngó Sen Tôm Thịt</h4>
+                                                        </div>
+                                                        <div class="smi-des">Là món ăn hấp dẫn với đa dạng các loại
+                                                            topping đi kèm</div>
+                                                        <div class="smi-price">150K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Salad Cá Hồi</h4>
+                                                        </div>
+                                                        <div class="smi-des">Hấp dẫn, lôi cuốn với mùi hương đặc biệt và
+                                                            thơm ngon</div>
+                                                        <div class="smi-price">100K</div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- .media -->
+
+                                </div><!-- .lcam-consingle -->
+                            </li>
+                            <li>
+                                <div id="layers-widget-lcam_contents-63-649" class="lcam-consingle-default has-image">
+
+
+                                    <div class="media no-push-bottom image-top medium">
+
+                                        <!-- Featured image -->
+                                        <div class="media-image ">
+                                            <img width="600" height="270"
+                                                src="image/BoSotVang.jpg"
+                                                class="attachment-medium size-medium" alt="" />
+                                        </div>
+
+                                        <!-- Media body -->
+
+                                        <div class="media-body text-left">
+                                            <h5 class="heading">
+                                                Thực Đơn Món Bò </h5>
+                                            <div class="excerpt">
+                                                <div class="single-menu-item">
+                                                    <div class="smi-heading">
+                                                        <h4>BeefSteak</h4>
+                                                    </div>
+                                                    <div class="smi-des">Là
+                                                            món ăn thơm ngon, bổ dưỡng, thịt bò tươi mềm không có mùi
+                                                            hôi</span></div>
+                                                    <div class="smi-price">250K</div>
+                                                </div>
+                                                <div class="single-menu-item">
+                                                    <div class="smi-heading">
+                                                        <h4>Bò Sốt Vang</h4>
+                                                    </div>
+                                                    <div class="smi-des">Là món hương vị đậm đà, thơm
+                                                        ngon, thịt bò mềm</div>
+                                                    <div class="smi-price">200K</div>
+                                                </div>
+                                                <div class="single-menu-item">
+                                                    <div class="smi-heading">
+                                                        <h4>Bò Kho</h4>
+                                                    </div>
+                                                    <div class="smi-des">Hấp dẫn, lôi cuốn với mùi hương đặc biệt và
+                                                        thơm ngon</div>
+                                                    <div class="smi-price">70K</div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+
+                                    </div><!-- .media -->
+
+                                </div><!-- .lcam-consingle -->
+                            </li>
+                        </ul>
+                        <div class="lcam-carousel-controller-bottom-center">
+                            <button id="#layers-widget-lcam_contents-63-prev" class="lcam-carousel-to-prev"><i
+                                    class="fa fa-caret-left"></i></button>
+                            <button id="#layers-widget-lcam_contents-63-next" class="lcam-carousel-to-next"><i
+                                    class="fa fa-caret-right"></i></button>
+                        </div>
+                    </div><!-- .lcam-carousel-container -->
+                </div><!-- .row -->
+            </section><!-- .lcam-widget-section -->
+            <section
+                class="lcam-contents-widget-section widget row content-vertical-massive lcam-widget lcam-contents-widget content-five-left-n "
+                id="layers-widget-lcam_contents-64">
+
+                <!-- set overlay section -->
+
+
+                <div class="lcam-contents-widget-container lcam-widget-container ">
+                    <div class="lcam-carousel-container" data-mode="horizontal" data-speed="500" data-maxslides="1"
+                        data-moveslides="1" data-slidemargin="10" data-randomstart=false data-adaptiveheight=false
+                        data-adaptiveHeightspeed="0" data-touchenabled=true data-auto=false data-pause="4000"
+                        data-autohover=false data-autodelay="0" data-ticker=false data-tickerhover=true>
+                        <ul class="lcam-carousel">
+                            <li>
+                                <div id="layers-widget-lcam_contents-64-135" class="lcam-consingle-default has-image">
+
+
+                                    <div class="media no-push-bottom image-top medium">
+
+                                        <!-- Featured image -->
+                                        <div class="media-image ">
+                                            <img width="600" height="270"
+                                                src="image/CaMuHapXiDau.jpg"
+                                                class="attachment-medium size-medium" alt="" />
+                                        </div>
+
+                                        <!-- Media body -->
+
+                                        <div class="media-body text-left">
+                                            <h5 class="heading">
+                                                Thực Đơn Hải Sản </h5>
+                                            <div class="excerpt">
+                                                <div class="total-menu-single">
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Tôm Hùm Nướng Phô Mai</h4>
+                                                        </div>
+                                                        <div class="smi-des">Là món được rất nhiều người thích, thịt tôm
+                                                            thơm ngon, phô mai béo ngậy</div>
+                                                        <div class="smi-price">250K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Cá Mú Hấp Xì Dầu</h4>
+                                                        </div>
+                                                        <div class="smi-des">Cách chế biến mới lạ, mùi vị hấp dẫn mang
+                                                            màu sắc bắt mắt</div>
+                                                        <div class="smi-price">120K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Ốc Hương Sốt Me</h4>
+                                                        </div>
+                                                        <div class="smi-des">Ốc dai giòn, nước sốt chua chua ngọt ngọt hấp dẫn</div>
+                                                        <div class="smi-price">80K</div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- .media -->
+
+                                </div><!-- .lcam-consingle -->
+                            </li>
+                            <li>
+                                <div id="layers-widget-lcam_contents-64-824" class="lcam-consingle-default has-image">
+
+
+                                    <div class="media no-push-bottom image-top medium">
+
+                                        <!-- Featured image -->
+                                        <div class="media-image ">
+                                            <img width="600" height="270"
+                                                src="image/CaiThiaXaoDaoHao.jpg"
+                                                class="attachment-medium size-medium" alt="" />
+                                        </div>
+
+                                        <!-- Media body -->
+
+                                        <div class="media-body text-left">
+                                            <h5 class="heading">
+                                                Thực Đơn Món Rau </h5>
+                                            <div class="excerpt">
+                                                <div class="total-menu-single">
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Rau Lang Xào Tỏi</h4>
+                                                        </div>
+                                                        <div class="smi-des">Rau lang mềm ngọt xào chung với tỏi thơm ngon </div>
+                                                        <div class="smi-price">50K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Cải Thìa Xào Dầu Hào</h4>
+                                                        </div>
+                                                        <div class="smi-des">Cải thìa tươi xanh xào với dầu hào mang đến
+                                                            hương vị lạ lẫm
+                                                        </div>
+                                                        <div class="smi-price">50K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Rau Luộc Chấm Kho Quẹt</h4>
+                                                        </div>
+                                                        <div class="smi-des">Món ăn được nhiều người yêu thích</div>
+                                                        <div class="smi-price">50K</div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- .media -->
+
+                                </div><!-- .lcam-consingle -->
+                            </li>
+                            <li>
+                                <div id="layers-widget-lcam_contents-64-824" class="lcam-consingle-default has-image">
+                            
+                            
+                                    <div class="media no-push-bottom image-top medium">
+                            
+                                        <!-- Featured image -->
+                                        <div class="media-image ">
+                                            <img width="600" height="270" src="image/GaChienGion.jpg" 
+                                            class="attachment-medium size-medium"
+                                                alt="" />
+                                        </div>
+                            
+                                        <!-- Media body -->
+                            
+                                        <div class="media-body text-left">
+                                            <h5 class="heading">
+                                                Thực Đơn Món Gà </h5>
+                                            <div class="excerpt">
+                                                <div class="total-menu-single">
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Gà Chiên Giòn</h4>
+                                                        </div>
+                                                        <div class="smi-des">Miếng gà giòn rụm, chấm với nước sốt đặc 
+                                                            chưng của nhà hàng </div>
+                                                        <div class="smi-price">80K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Gà Kho Sả Ớt</h4>
+                                                        </div>
+                                                        <div class="smi-des">Thịt gà đậm vị, kết hợp với nước kho cay cay
+                                                        </div>
+                                                        <div class="smi-price">100K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Gà Tiềm Ớt Hiểm</h4>
+                                                        </div>
+                                                        <div class="smi-des">Món ăn được nhiều người yêu thích</div>
+                                                        <div class="smi-price">250K</div>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                    </div><!-- .media -->
+                            
+                                </div><!-- .lcam-consingle -->
+                            </li>
+                        </ul>
+                        <div class="lcam-carousel-controller-bottom-center">
+                            <button id="#layers-widget-lcam_contents-64-prev" class="lcam-carousel-to-prev"><i
+                                    class="fa fa-caret-left"></i></button>
+                            <button id="#layers-widget-lcam_contents-64-next" class="lcam-carousel-to-next"><i
+                                    class="fa fa-caret-right"></i></button>
+                        </div>
+                    </div><!-- .lcam-carousel-container -->
+                </div><!-- .row -->
+            </section><!-- .lcam-widget-section -->
+            <section
+                class="lcam-contents-widget-section widget row content-vertical-massive lcam-widget lcam-contents-widget content-five-right-n "
+                id="layers-widget-lcam_contents-65">
+
+                <!-- set overlay section -->
+
+
+                <div class="lcam-contents-widget-container lcam-widget-container ">
+                    <div class="lcam-carousel-container" data-mode="horizontal" data-speed="500" data-maxslides="1"
+                        data-moveslides="1" data-slidemargin="10" data-randomstart=false data-adaptiveheight=false
+                        data-adaptiveHeightspeed="0" data-touchenabled=true data-auto=false data-pause="4000"
+                        data-autohover=false data-autodelay="0" data-ticker=false data-tickerhover=true>
+                        <ul class="lcam-carousel">
+                            <li>
+                                <div id="layers-widget-lcam_contents-65-135" class="lcam-consingle-default has-image">
+
+
+                                    <div class="media no-push-bottom image-top medium">
+
+                                        <!-- Featured image -->
+                                        <div class="media-image ">
+                                            <img width="300" height="200"
+                                                src="image/BiaHeineken.jpg"
+                                                class="attachment-medium size-medium" alt="" />
+                                        </div>
+
+                                        <!-- Media body -->
+
+                                        <div class="media-body text-left">
+                                            <h5 class="heading">
+                                                Sinh Tố Lúa Mạch </h5>
+                                            <div class="excerpt">
+                                                <div class="total-menu-single">
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Bia Heineken</h4>
+                                                        </div>
+                                                        <div class="smi-price">20K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Bia Tiger </h4>
+                                                        </div>
+                                                        <div class="smi-price">15K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Bia SaiGon Đỏ</h4>
+                                                        </div>
+                                                        <div class="smi-price">18K</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- .media -->
+
+                                </div><!-- .lcam-consingle -->
+                            </li>
+                            <li>
+                                <div id="layers-widget-lcam_contents-65-175" class="lcam-consingle-default has-image">
+
+
+                                    <div class="media no-push-bottom image-top medium">
+
+                                        <!-- Featured image -->
+                                        <div class="media-image ">
+                                            <img width="300" height="200"
+                                                src="image/BiaSaiGonXanh.jpg"
+                                                class="attachment-medium size-medium" alt="" />
+                                        </div>
+
+                                        <!-- Media body -->
+
+                                        <div class="media-body text-left">
+                                            <h5 class="heading">
+                                               Sinh Tố Lúa Mạch </h5>
+                                            <div class="excerpt">
+                                                <div class="total-menu-single">
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Bia Sài Gòn Xanh</h4>
+                                                        </div>
+                                                        <div class="smi-price">20K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Bia Tiger</h4>
+                                                        </div>
+                                                        <div class="smi-price">15K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Bia 333</h4>
+                                                        </div>
+                                                        <div class="smi-price">10K</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- .media -->
+
+                                </div><!-- .lcam-consingle -->
+                            </li>
+                            <li>
+                                <div id="layers-widget-lcam_contents-65-343" class="lcam-consingle-default has-image">
+
+
+                                    <div class="media no-push-bottom image-top medium">
+
+                                        <!-- Featured image -->
+                                        <div class="media-image ">
+                                            <img width="300" height="200"
+                                                src="image/RuouMixTraiCay.jpg"
+                                                class="attachment-medium size-medium" alt="" />
+                                        </div>
+
+                                        <!-- Media body -->
+
+                                        <div class="media-body text-left">
+                                            <h5 class="heading">
+                                                Rượu </h5>
+                                            <div class="excerpt">
+                                                <div class="total-menu-single">
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Rượu Nếp Long An</h4>
+                                                        </div>
+                                                        <div class="smi-price">35K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Rượu Nho</h4>
+                                                        </div>
+                                                        <div class="smi-price">70K</div>
+                                                    </div>
+                                                    <div class="single-menu-item">
+                                                        <div class="smi-heading">
+                                                            <h4>Rượu Mix Trái Cây</h4>
+                                                        </div>
+                                                        <div class="smi-price">100K</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- .media -->
+
+                                </div><!-- .lcam-consingle -->
+                            </li>
+                        </ul>
+                        <div class="lcam-carousel-controller-bottom-center">
+                            <button id="#layers-widget-lcam_contents-65-prev" class="lcam-carousel-to-prev"><i
+                                    class="fa fa-caret-left"></i></button>
+                            <button id="#layers-widget-lcam_contents-65-next" class="lcam-carousel-to-next"><i
+                                    class="fa fa-caret-right"></i></button>
+                        </div>
+                    </div><!-- .lcam-carousel-container -->
+                </div><!-- .row -->
+            </section><!-- .lcam-widget-section -->
+
+<section id="layers-widget-column-72"
+    class="widget layers-content-widget row content-vertical-massive reservation-area resa-3 pt60 pb60 ">
+    <div class="container clearfix">
+            <div id="back-to-top">
+            <a href="#top">Đầu trang</a>
+            </div> <!-- back-to-top -->
+        </section>
+        <div class='page-footer'>
+            <section id="layers-widget-column-77" class="widget layers-content-widget row content-vertical-massive pb60 pt60 ">
+                <div class="row container list-grid">
+        
+                    <div id="layers-widget-column-77-754"
+                        class="layers-masonry-column layers-widget-column-754 span-4  column  has-image">
+        
+                        <div class="media image-top medium">
+                            <div class="media-image ">
+                                <br>
+                                <img width="27" height="27"
+                                    src="https://nhahangdoanvien.com.vn/wp-content/uploads/2016/10/icon-service.png"
+                                    class="attachment-full size-full" alt="" />
+                            </div>
+        
+                            <div class="media-body text-center">
+                                <h5 class="heading">
+                                    Dịch vụ giao hàng </h5>
+                                <div class="excerpt">
+                                    <p><span class="email">hieuntps20981@fpt.edu.vn</span></p>
+                                    <p>Miễn phí giao hàng dưới 03 km</p>
+                                    <p class="phone-no"><a href="tel:0918092273"><span
+                                                style="color: #f40f0f; font-size: 24pt;"><strong>0918.09.22.73</strong></span></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="layers-widget-column-77-98"
+                        class="layers-masonry-column layers-widget-column-98 span-4  column  has-image">
+        
+                        <div class="media image-top medium">
+                            <div class="media-image ">
+                                <br>
+                                <img width="25" height="27"
+                                    src="https://nhahangdoanvien.com.vn/wp-content/uploads/2016/10/icon-time.png"
+                                    class="attachment-full size-full" alt="" />
+                            </div>
+        
+                            <div class="media-body text-center">
+                                <h5 class="heading">
+                                    Giờ mở cửa </h5>
+                                <div class="excerpt">
+                                    <div class="service-time">
+                                        <h4>Mở cửa: 06am</h4>
+                                    </div>
+                                    <div class="service-time">
+                                        <h4>Đóng cửa: 22pm</h4>
+                                        <p>Hoạt động từ Thứ 2 &#8211; Chủ Nhật</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="layers-widget-column-77-33"
+                        class="layers-masonry-column layers-widget-column-33 span-4  column  has-image">
+        
+                        <div class="media image-top medium">
+                            <div class="media-image ">
+                                <br>
+                                <img width="27" height="27"
+                                    src="https://nhahangdoanvien.com.vn/wp-content/uploads/2016/10/icon-letter.png"
+                                    class="attachment-full size-full" alt="" />
+                            </div>
+        
+                            <div class="media-body text-center">
+                                <h5 class="heading">
+                                    Liên hệ </h5>
+                                <div class="excerpt">
+                                    <p> Công viên phần mềm, Toà nhà Innovation lô 24, </p>
+                                    <p> Quang Trung, Quận 12, Thành phố Hồ Chí Minh, Vietnam </p>
+                                    <p> Điện thoại: <span style="color: #7d7b6d;"><a href="tel:0918092273"
+                                                style="color: #7d7b6d;">091 8092 273</a></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </section>
+        </div>
+        <footer id="footer" class="footer-site">
+            <div class="container  clearfix">
+        
+        
+        
+            </div>
+        
+        
+        </footer><!-- END / FOOTER -->
+        <div class="footer-bottom pb60 pt60" style="text-align: center;">
+        
+            <div class="container">
+        
+                <div class="row copyright">
+                    <div class="row">
+                        <a href="#" title="Nhà hàng Đẹp&Độc"><img
+                                src="image/NhatCuong.jpg" style="width: 180px; height:80px" /></a>
+                        <p class="site-text"> Hân hạnh được phục vụ quý khách</p>
+                        <div id="mbmcl">
+                            <div style="white-space:nowrap;display: block;overflow: hidden;align-items: center;">
+                                <a style="color:#7d7b6d;font-size:12px;" target="_blank"
+                                    href="https://www.facebook.com/troghieu203">Thiết kế
+                                    web by Trọng Hiếu</a>
+                                <!-- background: url(https://www.chili.vn/chili_vn_web_doanh_nghiep.png);
+            background-repeat: no-repeat; background-position: right; padding-right: 37px; -->
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+        
+        
+        
+            </div>
+        
+        </div>
+        
+        </section><!-- END / MAIN SITE #wrapper -->
+    <script>
+        var link = jQuery(".header-site .nav li.menu-item-has-children > a");
+        var linka = link.attr("href");
+
+        jQuery(".header-site .nav li.menu-item-has-children > a").on("touchstart", function (e) {
+            if (link.hasClass("abc")) {
+
+                return true;
+                link.removeClass("abc");
+
+            } else {
+
+                e.preventDefault();
+                link.addClass("abc");
+                return false;
+            }
+        });
+
+
+    </script>
+
+
+
+    <script>
+        jQuery("#off-canvas-right .nav-mobile ul li a").on("touchstart", function () {
+            return true;
+        });
+    </script>
+    <script>jQuery(document).ready(function () {
+            var offset = 220;
+            var duration = 500;
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > offset) {
+                    jQuery('#back-to-top').fadeIn(duration);
+                } else {
+                    jQuery('#back-to-top').fadeOut(duration);
+                }
+            });
+            jQuery('#back-to-top').click(function (e) {
+                e.preventDefault();
+                jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                return false;
+            })
+        });</script>
+    <link rel='stylesheet' id='layers-inline-styles-css'
+        href='https://nhahangdoanvien.com.vn/wp-content/themes/layerswp/assets/css/inline.css?ver=5.3.2' type='text/css'
+        media='all' />
+    <style id='layers-inline-styles-inline-css' type='text/css'>
+        #layers-widget-lcam_contents-61 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-61 button.lcam-carousel-to-prev,
+        #layers-widget-lcam_contents-61 button.lcam-carousel-to-next {
+            background-color: #373737;
+        }
+
+        #layers-widget-lcam_contents-61 button.lcam-carousel-to-prev,
+        #layers-widget-lcam_contents-61 button.lcam-carousel-to-next {
+            color: #ffffff;
+        }
+
+        #layers-widget-lcam_contents-61-232 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-61-155 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-62 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-62 button.lcam-carousel-to-prev,
+        #layers-widget-lcam_contents-62 button.lcam-carousel-to-next {
+            background-color: #373737;
+        }
+
+        #layers-widget-lcam_contents-62 button.lcam-carousel-to-prev,
+        #layers-widget-lcam_contents-62 button.lcam-carousel-to-next {
+            color: #ffffff;
+        }
+
+        #layers-widget-lcam_contents-62-431 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-62-530 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-62-346 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-63 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-63 button.lcam-carousel-to-prev,
+        #layers-widget-lcam_contents-63 button.lcam-carousel-to-next {
+            background-color: #373737;
+        }
+
+        #layers-widget-lcam_contents-63 button.lcam-carousel-to-prev,
+        #layers-widget-lcam_contents-63 button.lcam-carousel-to-next {
+            color: #ffffff;
+        }
+
+        #layers-widget-lcam_contents-63-431 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-63-172 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-63-649 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-64 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-64 button.lcam-carousel-to-prev,
+        #layers-widget-lcam_contents-64 button.lcam-carousel-to-next {
+            background-color: #373737;
+        }
+
+        #layers-widget-lcam_contents-64 button.lcam-carousel-to-prev,
+        #layers-widget-lcam_contents-64 button.lcam-carousel-to-next {
+            color: #ffffff;
+        }
+
+        #layers-widget-lcam_contents-64-135 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-64-824 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-65 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-65 button.lcam-carousel-to-prev,
+        #layers-widget-lcam_contents-65 button.lcam-carousel-to-next {
+            background-color: #373737;
+        }
+
+        #layers-widget-lcam_contents-65 button.lcam-carousel-to-prev,
+        #layers-widget-lcam_contents-65 button.lcam-carousel-to-next {
+            color: #ffffff;
+        }
+
+        #layers-widget-lcam_contents-65-135 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-65-175 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-lcam_contents-65-343 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-column-72 {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('https://nhahangdoanvien.com.vn/wp-content/uploads/2016/10/anh-nen-cm-thuc-don.jpg');
+            
+        }
+
+        #layers-widget-column-72-700 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-column-72-303 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #layers-widget-map-24 {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var x_loader = { "startPage": "1", "maxPages": "5", "nextLink": "https:\/\/nhahangdoanvien.com.vn\/thuc-don\/page\/2\/", "selector_m": "", "selector_p": "", "selector_n": "", "selector_a": "animation-parent ", "selector_isotope": ".grid", "string_load_more": "Loade More", "string_no_more": "No More Posts", "string_loading": "Loading ...", "gif": "https:\/\/nhahangdoanvien.com.vn\/wp-content\/plugins\/layers-plus\/assets\/img\/g1.gif" };
+/* ]]> */
+    </script>
+    <script type='text/javascript'
+        src='https://nhahangdoanvien.com.vn/wp-content/plugins/layers-plus/assets/js/load-posts.js?ver=1.0'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wpcf7 = { "apiSettings": { "root": "https:\/\/nhahangdoanvien.com.vn\/wp-json\/", "namespace": "contact-form-7\/v1" }, "recaptcha": { "messages": { "empty": "H\u00e3y x\u00e1c nh\u1eadn r\u1eb1ng b\u1ea1n kh\u00f4ng ph\u1ea3i l\u00e0 robot." } }, "cached": "1" };
+/* ]]> */
+    </script>
+    <script type='text/javascript'
+        src='https://nhahangdoanvien.com.vn/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.8'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var layers_script_settings = { "header_sticky_breakpoint": "270" };
+/* ]]> */
+    </script>
+    <script type='text/javascript'
+        src='https://nhahangdoanvien.com.vn/wp-content/themes/layerswp/assets/js/layers.framework.js?ver=1.2.9'></script>
+    <script type='text/javascript'
+        src='https://nhahangdoanvien.com.vn/wp-includes/js/comment-reply.min.js?ver=5.3.2'></script>
+    <script type='text/javascript'
+        src='https://nhahangdoanvien.com.vn/wp-content/plugins/layers-plus/assets/js/css3-animate-it.js?ver=5.3.2'></script>
+    <script type='text/javascript'
+        src='https://nhahangdoanvien.com.vn/wp-content/plugins/layers-plus/assets/js/elements.js?ver=5.3.2'></script>
+    <script type='text/javascript'
+        src='https://nhahangdoanvien.com.vn/wp-content/plugins/layers-plus/assets/js/load-callback.js?ver=1.0'></script>
+    <script type='text/javascript'
+        src='https://nhahangdoanvien.com.vn/wp-content/plugins/layers-carousel-mojo/assets/js/jquery.bxslider.min.js?ver=4.2.5'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var LCAMOJO = { "MobileWidth": "380", "tablet1Width": "550", "tablet2Width": "730", "LaptopWidth": "910" };
+        var LCAMOJO = { "MobileWidth": "380", "tablet1Width": "550", "tablet2Width": "730", "LaptopWidth": "910" };
+        var LCAMOJO = { "MobileWidth": "380", "tablet1Width": "550", "tablet2Width": "730", "LaptopWidth": "910" };
+        var LCAMOJO = { "MobileWidth": "380", "tablet1Width": "550", "tablet2Width": "730", "LaptopWidth": "910" };
+        var LCAMOJO = { "MobileWidth": "380", "tablet1Width": "550", "tablet2Width": "730", "LaptopWidth": "910" };
+/* ]]> */
+    </script>
+    <script type='text/javascript'
+        src='https://nhahangdoanvien.com.vn/wp-content/plugins/layers-carousel-mojo/assets/js/plugin.js?ver=1.0.0'></script>
+    <script type='text/javascript'
+        src='http://maps.googleapis.com/maps/api/js?key=AIzaSyDmhrvT25nd4DE6DXgw5y4lvg7nLmxGV_s&#038;ver=5.3.2'></script>
+    <script type='text/javascript'
+        src='https://nhahangdoanvien.com.vn/wp-content/themes/layerswp/core/widgets/js/maps.js?ver=1.2.9'></script>
+</body>
+</html>

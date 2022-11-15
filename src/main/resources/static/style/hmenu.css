@@ -1,0 +1,52 @@
+.hmenu{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    height: 40px;
+    /* text-align: center; */
+}
+.hmenu ul{
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    list-style: none;
+    width: 200px;
+    position: absolute;
+    display: none;
+    background-color: rgb(195, 250, 216);
+}
+.hmenu ul>li>a{
+    display: block;
+    line-height: 30px;
+    border-bottom: 1px dotted green;
+    text-decoration: none;
+    padding-left: 0px;
+    color: rgb(235, 26, 95);
+}
+/* .hmenu ul>li>a:hover{
+    color: red;
+    background-color: mediumspringgreen;
+} */
+.hmenu>li{
+    display: inline-block;
+    /* float: left; */
+    margin: 0 5px;
+    position: relative;
+}
+.hmenu>li>a{
+    display: block;
+    text-decoration: none;
+    line-height: 27px;
+    padding-left: 15px;
+    color: green;
+  
+
+}
+.hmenu>li>a:hover{
+    color: red;
+}
+.hmenu>li:hover>ul{
+    display: block;
+}
+

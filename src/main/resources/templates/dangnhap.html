@@ -1,53 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Đăng Nhập</title>
-    <link rel="stylesheet" href="/style/dangnhap.css">
-</head>
-<body>
-    <div class="signin">
-        <h1 class="signin-heading">Đăng nhập</h1>
-        <button class="signin-social">
-          <i class="fa fa-google signin-social-icon"></i>
-          <span class="signin-social-text">Đăng nhập bằng Google</span>
-        </button>
-        <div class="signin-or"><span>Or</span></div>
-        <form action="#" class="signin-form" autocomplete="off">
-          <label for="fullname" class="signin-label">Tài khoản</label>
-          <input type="text" id="fullname" class="signin-input" placeholder="Tên đăng nhập">
-          <label for="email" class="signin-label">Mật khẩu</label>
-         <div  class="box">
-          <input type="password" id="password" class="signin-input" placeholder="Mật khẩu">
-          <div id="toggle" onclick="showPassword()"></div>
-         </div>
-          <button class="signin-submit">Đăng nhập</button>
-        </form>
-        <p class="signin-already">
-          <span>Bạn chưa có tài khoản ?</span>
-          <a href="dangki.html" class="signin-login-link">Đăng kí</a>
-        </p>
-      </div>
-</body>
-<script>
-    const password = document.getElementById('password');
-    const toggle = document.getElementById('toggle');
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+              rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Đăng Nhập</title>
+        <link rel="stylesheet" href="/style/dangnhap.css">
+    </head>
+    <body>
+        <div class="signin">
+            <h1 class="signin-heading">Đăng nhập</h1>
+            <button class="signin-social">
+                <i class="fa fa-google signin-social-icon"></i>
+                <span class="signin-social-text">Đăng nhập bằng Google</span>
+            </button>
+            
+            <div class="signin-or"><span>Or</span></div>
+            <form action="login" class="signin-form" autocomplete="off" method = "post">
+                <label for="fullname" class="signin-label">Tài khoản</label>
+                <input type="text" name="fullname" class="signin-input" placeholder="Tên đăng nhập">
+                <label for="email" class="signin-label">Mật khẩu</label>
+                
+                <div  class="box">
+                    <input type="password" name="password" class="signin-input" placeholder="Mật khẩu">
+                    <div id="toggle" onclick="showPassword()"></div>
+                </div>
+                <a th:text="${message}"/>
+                <br>
+                <br>                
+                <button>Đăng nhập</button>
+            </form>
+            <p class="signin-already">
+                <span>Bạn chưa có tài khoản ?</span>
+                <a href="dangki.html" class="signin-login-link">Đăng kí</a>
+            </p>
+        </div>
+    </body>
+    <script>
+        const password = document.getElementById('password');
+        const toggle = document.getElementById('toggle');
 
-    function showPassword() {
-        if (password.type === 'password') {
-            password.setAttribute('type','text');
-            toggle.classList.add('hide');
+        function showPassword() {
+            if (password.type === 'password') {
+                password.setAttribute('type', 'text');
+                toggle.classList.add('hide');
+            } else {
+                password.setAttribute('type', 'password');
+                toggle.classList.remove('hide');
+            }
         }
-        else {
-            password.setAttribute('type','password');
-            toggle.classList.remove('hide');
-        }
-    }
-</script>
+    </script>
 </html>

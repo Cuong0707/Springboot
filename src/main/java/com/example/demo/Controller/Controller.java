@@ -4,7 +4,9 @@
  */
 package com.example.demo.Controller;
 
-import Model.User;
+
+import javax.servlet.http.HttpServletRequest;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,45 +17,28 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @org.springframework.stereotype.Controller
-
+@RequestMapping("user")
 public class Controller {
-    
-    @RequestMapping(value = {"/User"})
-    public User User()
-    {
-        User u = new User();
-        u.setTk("Cuong");
-        u.setMk("1");
-        return u;
-    }
-    @RequestMapping(value = "/")
-    public String show()
-    {
-        return "index";
-    }
-    @RequestMapping(value = "/home.html")
-    public String home()
-    {
-        return "home";
-    }
-    @RequestMapping(value = "/thucdon.html")
-    public String thucdon()
-    {
-        return "thucdon";
-    }
-    @RequestMapping(value = "/lienhe.html")
-    public String lienhe()
-    {
-        return "lienhe";
-    }
-    @RequestMapping(value = "/dangki.html")
-    public String dangki()
-    {
-        return "dangki";
-    }
-    @RequestMapping(value = "/dangnhap.html")
-    public String dangnhap()
-    {
-        return "dangnhap";
-    }
+   @RequestMapping(value = "login",method=RequestMethod.GET)
+   public String login()
+   {
+       return "dangnhap";
+   }
+   @RequestMapping(value = "login",method = RequestMethod.POST)
+   public String login(ModelMap model,HttpServletRequest request)
+   {
+       String id = request.getParameter("fullname");
+       //String email = request.getParameter("email");
+       String pass = request.getParameter("password");
+       if(id.equals("Cuong") && pass.equals("123"))
+       {
+           return "dangnhap";
+       }
+       else
+       {
+           model.addAttribute("message","That bai");
+           return "dangnhap";
+       }
+       
+   }
 }
